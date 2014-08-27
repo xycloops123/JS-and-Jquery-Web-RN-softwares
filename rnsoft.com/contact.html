@@ -1,0 +1,169 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6 contact"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7 contact"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8 contact"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9 contact"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en" class="no-js contact">
+    <!--<![endif]-->
+    
+
+<head>
+        <meta charset="utf-8">
+            <meta name="author" content="RN Softwares ltd">
+                <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+
+                <title>Contact</title>
+                <meta name="description" content="" />
+                <meta name="keywords" content="" />
+                <link rel="shortcut icon" href=>
+                    <link rel="apple-touch-icon" href=>
+                        <link rel="stylesheet" href="userstorage/styles/jquery.fancybox-1.3.4.css"/>
+                        <link rel="stylesheet" href="userstorage/styles/screen.css"/>
+          
+    <script src="userstorage/js/libs/modernizr-1.6.min.js"></script>
+
+    
+    
+    
+    <script type="text/javascript" src="../code.jquery.com/jquery-1.6.1.min.js"></script>
+    
+        <script type="text/javascript" src="MonoRail/Files/BuiltJS5a15.js?name=layout&amp;version=-1723547997888775267"></script>
+                        <script type="text/javascript" src="MonoRail/Files/BuiltJSdaf4.js?name=razorback&amp;version=5036587366530448384"></script>
+            
+            <style type="text/css">
+            .hidden-page 
+            {
+                display:none;
+            }
+            .hidden
+            {
+                display: none;
+            }
+        </style>
+    
+        <script type="text/javascript">
+            $(document).ready(function () {
+                
+                $('#' + 'contact-form634a1a0e-3619-42b6-adce-9ec500b1fa49').validate({
+					showErrors: function() {
+						var errors = this.numberOfInvalids();
+						if (errors) {
+							$(this.currentForm).addClass("error");
+						} else {
+							$(this.currentForm).removeClass("error");
+						}
+						this.defaultShowErrors();
+					}
+                                });
+
+                $('#' + 'contact-form634a1a0e-3619-42b6-adce-9ec500b1fa49').find("div.form-navigation").find("a.back").click(function () {
+                    var currentPage = $('#' + 'contact-form634a1a0e-3619-42b6-adce-9ec500b1fa49').find("#currentPage");
+                    var pageNumber = parseInt(currentPage.val())-1;
+
+                    var current = $('#' + 'contact-form634a1a0e-3619-42b6-adce-9ec500b1fa49').find("div.current-page");
+                    var prev = current.prev("#form-page-" + pageNumber);
+                    if (prev.length > 0) {
+                        $('#' + 'contact-form634a1a0e-3619-42b6-adce-9ec500b1fa49').find("div.form-navigation").find("a.next").show();
+                        changePage(current, prev);
+                        
+                        currentPage.val(pageNumber);
+
+                        if(pageNumber == 1) {
+                            $(this).hide();
+                        }
+                    }
+                    return false;
+
+                });
+
+                $('#' + 'contact-form634a1a0e-3619-42b6-adce-9ec500b1fa49').find("div.form-navigation").find("a.next").click(function () {
+					console.log("next");
+                    var currentPage = $('#' + 'contact-form634a1a0e-3619-42b6-adce-9ec500b1fa49').find("#currentPage");
+                    var pageNumber = parseInt(currentPage.val())+1;
+
+                    var current = $('#' + 'contact-form634a1a0e-3619-42b6-adce-9ec500b1fa49').find("div.current-page");
+                    var next = current.next("#form-page-" + pageNumber);
+                    if (next.length > 0) {
+                        $('#' + 'contact-form634a1a0e-3619-42b6-adce-9ec500b1fa49').find("div.form-navigation").find("a.back").show();
+                        changePage(current, next);
+                        currentPage.val(pageNumber);
+                        var totalPages = $('#' + 'contact-form634a1a0e-3619-42b6-adce-9ec500b1fa49').find("#total-pages");
+                        if(totalPages.val() == pageNumber) {
+                            $(this).hide();
+                        }
+                    }
+                    return false;
+                });
+
+                function changePage(current, next) {
+                    current.hide();
+                    current.removeClass("current-page");
+
+                    next.show();
+                    next.addClass("current-page");
+                }
+
+                $('#' + 'contact-form634a1a0e-3619-42b6-adce-9ec500b1fa49').find(".save-button").click(function () {
+                    $("form").attr("action", "/CustomForms/SaveForm?" + new Date().getMilliseconds());
+                    $("form").attr("target", "_blank");
+                    _save = true;
+                });
+
+                            }); 
+        </script> 
+    
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-1681851-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+                            
+    </head>
+
+<body class="contact">
+
+<div id="lightbox-html">
+    
+    
+    <div id="main-text">
+    <div id="address" class="__razorback_container__"><p>RN Softwares, E, Sai Prasad, 5th Lane</p>
+<p>Rajarampuri, Kolhapur - 416008</p>
+<p>Tel:+91 7276388003</p></div>
+    <span id="header_paragraph" class="__razorback_container__"> PAGE UNDER CONSTRUCTION</span>
+	<img src="userstorage/images/conn.gif" alt="design" />
+<!--  
+  <div id="contact-form" class="__razorback_container__"><form id='contact-form634a1a0e-3619-42b6-adce-9ec500b1fa49' method='post' target='_self' action='http://RN Softwares.com/CustomForms/DoPost' name='contact-form634a1a0e-3619-42b6-adce-9ec500b1fa49_298'><input type='hidden' value='634a1a0e-3619-42b6-adce-9ec500b1fa49' name='customFormId'/><input type='hidden' value='' name='thankyoutext'/><input type='hidden' value='gaurav@RN Softwares.com' name='internalEmail'/><input type='hidden' value='Email enquiry' name='internalSubject'/><input type='hidden' value='no-reply@RN Softwares.com' name='internalFromAddress'/><input type='hidden' value='' name='emailSubject'/><input type='hidden' value='' name='emailFrom'/><input type='hidden' value='' name='emailContent'/><input type='hidden' value='False' name='emailEndUser'/><input type='hidden' value='' name='customFormDataId'/><input type='hidden' value='1ccd43b0-5ec2-416c-92b4-9ed1011f1d68' name='onSubmitPage'/><input type='hidden' value='1' name='currentPage' id='currentPage'/><input type='hidden' value='ada204d1-5c02-4f0d-b158-9ec401199988' name='pageId'/><input type='hidden' id='total-pages' name='total-pages' value='1' /><div class='form-page current-page' id='form-page-1'> <div class='name'><label for="5073e9be-b78c-4fc4-9d9f-9ec500b1fa49">Your name</label><input type="text" id="5073e9be-b78c-4fc4-9d9f-9ec500b1fa49" name="5073e9be-b78c-4fc4-9d9f-9ec500b1fa49" value="" title="Your name is required" class="custom-form-control required" /><span class='error-indicator'>*</span></div><div class='email'><label for="68b4543f-2c08-497c-b711-9ec500b1fa49">Email address</label><input type="text" id="68b4543f-2c08-497c-b711-9ec500b1fa49" name="68b4543f-2c08-497c-b711-9ec500b1fa49" value="" class="email custom-form-control required" title="Email address must be a valid email address" /><span class='error-indicator'>*</span></div><div class='telephone'><label for="dd35741b-415e-46cd-b590-9ec500b1fa49">Telephone</label><input type="text" id="dd35741b-415e-46cd-b590-9ec500b1fa49" name="dd35741b-415e-46cd-b590-9ec500b1fa49" value="" title="Telephone is required" class="custom-form-control" /></div><div class='message'><label for="8ce98cec-14dc-4f6b-a5dd-9ec500b1fa49">Your message</label>  <textarea id="8ce98cec-14dc-4f6b-a5dd-9ec500b1fa49" name="8ce98cec-14dc-4f6b-a5dd-9ec500b1fa49" title="Your message is required" class="custom-form-control required" ></textarea> <span class='error-indicator'>*</span></div></div><div class='submit-control'><input type="submit" value="Submit" title="Submit" class="custom-form-control" /></div></form>    
+    <div id="contact-formsaved-message" class="hidden">
+        <p>You  has been saved</p>
+    </div>
+
+        </div>
+    <div id="how-to-find-us" class="__razorback_container__"><p>If you would like to find us using Google Maps, please <a href="contact/directions.html">click here</a>.</p></div>
+</div>
+    
+    
+    
+    </div>
+</div>
+
+    
+
+    <!--[if lt IE 7 ]>
+    <script src="/userstorage/js/libs/dd_belatedpng.js"></script>
+    <script> DD_belatedPNG.fix('img, .png_bg'); </script>
+  <![endif]-->
+
+<script type="text/javascript">document.write(unescape('%3Cscript type="text/javascript" src="'+document.location.protocol+'//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/5973.js"%3E%3C%2Fscript%3E'))</script>
+</body>
+
+</html>
